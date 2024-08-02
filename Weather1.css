@@ -1,0 +1,142 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: white;
+  }
+  
+  .mainBody {
+    width: 100%;
+    height: 100vh;
+    background-image: url(8562848_25501.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .mainBody>div>section {
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid; */
+  }
+  
+  .mainBody>div>section:first-child {
+    border-right: 1px solid;
+  }
+  
+  .mainBody>div {
+    width: 80%;
+    height: 80vh;
+    background-color: rgba(0, 0, 0, 0.552);
+    display: flex;
+    padding: 40px;
+  }
+  
+  .cityname {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .cityname>h1 {
+    font-size: 50px;
+  }
+  .cloud{
+    transition-timing-function:linear;
+    animation-name: cloud;
+    animation-duration:2s ;
+    animation-iteration-count: infinite;
+  }
+  @keyframes cloud{
+    from{
+     transform: scale(0.5);
+    }
+    to{
+    transform: scale(1);
+    }
+   
+    
+  }
+ 
+
+  
+  
+  .temp>aside {
+    font-size: 60px;
+  }
+  
+  .temp {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .wind {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .asideWind{
+    transition-timing-function:ease-out;
+    animation-name: wind;
+    animation-duration:2s ;
+    animation-iteration-count:infinite;
+    animation-delay:2s;
+  }
+  @keyframes wind{
+    from{
+     transform: translateX(0px);
+    }
+    to{
+    transform: translate(100px);
+    }
+  }
+  
+  .sun {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .rotate>img{
+    transition-timing-function:linear;
+    animation-name: sun;
+    animation-duration:2s ;
+    animation-iteration-count: infinite;
+  }
+  @keyframes sun{
+    from{
+     transform: rotate(0deg);
+    }
+    to{
+    transform: rotate(360deg);
+    }
+  }
+  .other {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .other>aside img{
+    transition-timing-function:ease-in-out;
+     animation-name:pressure;
+     animation-duration:2s ;
+     animation-iteration-count: infinite;
+   
+   }
+   @keyframes pressure{
+     from{
+      transform: scale(0.5);
+     }
+     to{
+     transform: scale(1);
+     }
+    
+     
+   }
+ 
+  
